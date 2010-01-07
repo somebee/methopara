@@ -48,6 +48,7 @@ typedef struct rb_iseq_struct {
     unsigned long iseq_size;
     VALUE mark_ary;	/* Array: includes operands which should be GC marked */
     VALUE coverage;     /* coverage array */
+    unsigned short line_no;
 
     /* insn info, must be freed */
     struct iseq_insn_info_entry *insn_info_table;
